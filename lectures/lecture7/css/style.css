@@ -36,11 +36,12 @@ img {
 
 .top-header img {
     border: 2px dashed rgb(248, 198, 90);
-    border-radius: 25px;
+    border-radius: 50%;
+    padding: 3px;
 }
 
 .social{
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
 }
@@ -52,7 +53,7 @@ footer .social ul {
     padding: 0;
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 25px;
 }
 
 
@@ -68,3 +69,10 @@ footer .social a {
     text-align: center;
     line-height: 30px;
 }
+
+footer .social a:hover{
+    background-color: rgb(255, 243, 216);
+    color: #ff7300;
+    transition: 0.3s;
+}
+
