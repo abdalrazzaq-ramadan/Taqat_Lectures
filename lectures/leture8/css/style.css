@@ -20,10 +20,6 @@ body {
     margin: 0 auto;
 }
 
-header{
-    height: 50%;
-}
-
 header .follow {
     background-image: url(../imges/تنزيل.jfif);
     background-repeat: repeat;
@@ -34,6 +30,7 @@ header .follow {
 
 header .follow .text {
     height: 100%;
+    font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
