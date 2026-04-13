@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    margin: 0;
+    background-color: #dbdbdb;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0 45px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #616161;
+    padding: 5px;
+}
+
+nav .left-header a:hover{
+    color: #fff;
+    transition: 0.25s;
+}
+
+nav .right-header a:hover{
+    color: #fff;
+    transition: 0.25s;
+}
+
+nav .right-header .btn{
+    padding: 10px 10px ;
+    border: 2px;
+    border-radius: 7px;
+    color: #fff;
+    background-color: rgb(14, 0, 139);
+}
+
+nav .right-header .btn:hover{
+    background-color: #ca2828;
+    transition: 0.25s;
+}
+
+.left-header{
+    display: flex;
+    align-items: center;
+}
+
+.left-header .links{
+    margin-left:10px ;
+}
+
+.left-header h2{
+    color: #fff;
+    font-style: italic;
+}
+
+.cards .cards-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.cards .cards-wrapper .card-owner img {
+    width: 50px;
+    height: 50px;
+}
+
+.breadcrumb{
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+}
+
+.breadcrumb .title{
+    /* box-sizing: border-box; */
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb .title a{
+    text-decoration: none;
+    color: black;
+    padding: 0 15px;
+    /* border-bottom: 2px solid #ff0303; */
+}
+
+.breadcrumb .title a:hover{
+    color: burlywood;
+}
+
+
+.cards .head a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #616161;
+    padding-right:10px ;
+}
+
+.cards .head a:hover{
+    color: black;
+    transition: 0.25s;
+}
+
+.cards .head{
+    margin: 30px 0;
+}
+
+.cards .cards-wrapper .card-info{
+    display: flex;
+    background-color: #fff;
+    gap: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.cards .cards-wrapper .img{
+    margin-top: 30px;
+}
+
+.cards .cards-wrapper .card-owner{
+    display: flex;
+    align-items: center;
+}
+
+.cards .cards-wrapper .card-owner .text{
+    margin: 0;
+    margin: 0 10px;
+}
+
+.cards .cards-wrapper .card-owner .text p{
+    margin: 0;
+}
+
+.cards .cards-wrapper .card-owner .text a{
+    text-decoration: none;
+    color: rgb(21, 0, 125);
+}
+
+.cards .cards-wrapper .card-owner p{
+    font-size: 12px;
+}
