@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header nav {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav .right-menu ul,
+header nav .left-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav .right-menu ul a,
+header nav .left-menu ul a {
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+main .posts {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .posts .post {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+main .posts .imag,
+main .posts .text {
+    width: 40%;
+}
+
+
+main .template div {
+    background-color: blue;
+    border: 1px solid red;
+    min-height: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 250px;
+    font-size: 18px;
+}
+
+
+
+main .template {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "one two two three"
+        "one four five five"
+        "one four seven eight"
+        "six six seven eight";
+}
+
+
+
+main .template>div:nth-child(1) {
+    grid-area: one;
+}
+
+main .template>div:nth-child(2) {
+    grid-area: two;
+}
+
+main .template>div:nth-child(3) {
+    grid-area: three;
+}
+
+main .template>div:nth-child(4) {
+    grid-area: four;
+}
+
+main .template>div:nth-child(5) {
+    grid-area: five;
+}
+
+main .template>div:nth-child(6) {
+    grid-area: six;
+}
+
+main .template>div:nth-child(7) {
+    grid-area: seven;
+}
+
+main .template>div:nth-child(8) {
+    grid-area: eight;
+}
