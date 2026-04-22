@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: black;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 50;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav .logo img {
+    width: 50px;
+}
+
+/* main{
+    padding-top:80px ;
+} */
+
+.hero {
+    background-image: url(../imges/coffee-back2.jfif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.hero .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .hero-content .text {
+    width: 45%;
+}
+
+.movies .page {
+    display: flex;
+}
+
+.movies .movie-wrapper {
+    display: grid;
+    padding: 100px 50px;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.movies .page .movie-type {
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid black;
+    position: sticky;
+    top: 100px;
+    height: 100%;
+}
