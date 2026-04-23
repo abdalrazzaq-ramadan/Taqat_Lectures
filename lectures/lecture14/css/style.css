@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.top-header {
+    background-color: rgb(0, 0, 96);
+    color: #fff;
+}
+
+header .top-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .top-header .container ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+header .top-header .container a {
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+header .top-header a:hover {
+    color: #150db6
+}
+
+header .head-text {
+    text-align: center;
+    padding: 30px 0;
+    color: #fff;
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+main .hero .template>div {
+    color: #fff;
+    min-width: 250px;
+    height: 100%;
+    min-height: 50px;
+    background-color: rgb(74, 0, 143);
+    margin: 5px;
+    text-align: center;
+    /* line-height: 200px; */
+    font-size: 22px;
+}
+
+main .hero .template {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "one  two three"
+        "four two three"
+        "four two five "
+    ;
+    gap: 10px;
+}
+
+main .hero .template>div:nth-child(1) {
+    grid-area: one;
+}
+
+main .hero .template>div:nth-child(2) {
+    grid-area: two;
+}
+
+main .hero .template>div:nth-child(3) {
+    grid-area: three;
+}
+
+main .hero .template>div:nth-child(4) {
+    grid-area: four;
+}
+
+main .hero .template>div:nth-child(5) {
+    grid-area: five;
+}
+
+main .about {
+    padding: 65px 0;
+}
+
+main .about .text {
+    text-align: center;
+}
+
+main .about .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+footer .copy {
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    background-color: rgb(0, 0, 72);
+}
+
+footer span a {
+    color: aquamarine;
+    text-decoration: none;
+}
