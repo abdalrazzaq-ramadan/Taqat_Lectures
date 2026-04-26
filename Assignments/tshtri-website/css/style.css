@@ -4,13 +4,17 @@
     box-sizing: border-box;
 }
 
-img{
+html {
+    scroll-behavior: smooth;
+}
+
+img {
     max-width: 100%;
 }
 
-body{
+body {
     margin: 0;
-    font-family:"Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 
@@ -19,50 +23,72 @@ body{
     margin: 0 auto;
 }
 
-:root{
-    border-top-color : #00A060;
-} 
-header .top-header{
-    background-color: #00A060;
+button {
+    cursor: pointer;
 }
 
-header .top-header .info{
+:root {
+    border-top-color: #00A060;
+}
+
+header .top-header {
+    background-color: #00A060;
+    color: #FFF;
+}
+
+header .top-header select {
+    background-color: #00A060;
+    border: transparent;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+}
+
+header .top-header .info {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .search-bar .container{
+header .search-bar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
 }
 
-header .search-bar{
+header .search-bar {
     border-bottom: 1px solid #00A060;
+    width: 100%;
+    top: 0;
 }
 
-header .search-bar .search-box{
+header .search-bar .search-box {
     font-weight: 100;
 }
 
 
-header .search-bar .search-box input{
+header .search-bar .search-box input {
     width: 500px;
     height: 50px;
     border: 1px solid rgb(172, 172, 172);
-    border-radius:15px;
+    border-radius: 15px;
     padding: 15px;
     font-size: 16px;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: black;
+    transition: all 0.3s ease;
 }
 
-header nav .container{
+header a:hover {
+    color: #00A060;
+}
+
+header nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,7 +103,7 @@ header nav ul {
     gap: 15px;
 }
 
-header nav .btn button{
+header nav .btn button {
     border: 1px solid #29AF79;
     border-radius: 5px;
     background-color: #29AF79;
@@ -88,152 +114,316 @@ header nav .btn button{
     font-size: 17px;
 }
 
-header nav .btn button:hover{
+header nav .btn button:hover {
     background-color: #004e2f;
 }
 
 
-main .hero .hero-img{
+main .hero {
+    padding-top: 30px;
+}
+
+main .hero .hero-img {
     position: relative;
     width: 100%;
     padding: 20px 0;
+    transition: 0.5s all ease;
+}
+
+main .hero .hero-img>img {
+    transition: 0.5s all ease;
+}
+
+main .hero .hero-img:hover {
+    transform: scale(1.03);
+}
+
+main .hero .hero-img:hover .img1 {
+    transform: scale(1.15);
+    transition: 0.6s;
+}
+
+main .hero .hero-img:hover .img2 {
+    transform: scale(0.9);
+    transition: all ease 0.5s;
 }
 
 
-main .hero .hero-img .img1{
+main .hero .hero-img .img1 {
     position: absolute;
-    top: 0;
+    top: 50px;
     left: 58%;
 }
 
 
-main .hero .hero-img .img2{
+main .hero .hero-img .img2 {
     position: absolute;
-    top: -25px;
+    top: -5px;
     left: 33%;
 }
 
-main .main-categories{
+main .hero .hero-img .btn {
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    padding: 15px 40px;
+    border: 1px solid #FFF;
+    background-color: #FFF;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.5s ease all;
+}
+
+main .hero .hero-img .btn:hover {
+    background-color: #00A060;
+    border: 1px solid #004e2f;
+}
+
+main .main-categories {
     padding: 80px 0;
 }
 
-main .cards-head{
+main .cards-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* padding: 80px 0 ; */
 }
 
-
-main .main-categories .icon-cards{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
+main .cards-head button {
+    padding: 5px;
+    background-color: #02b86f;
+    border: 1px solid #02b86f;
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.4s ease;
 }
 
+main .cards-head button:hover {
+    background-color: transparent;
+    border: transparent 1px solid;
+    color: black;
+}
 
-
-main .products .cards-wrapper{
+main .main-categories .icon-cards {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+main .main-categories .icon-cards a {
+    transition: all ease 0.3s;
+}
+
+main .main-categories .icon-cards a:hover {
+    transform: scale(1.1);
+
+}
+
+main .products .cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     padding: 50px 0;
 }
 
-main .products .cards-wrapper .card{
-    background-color: rgb(235, 235, 235);
+main .products .cards-wrapper .card {
+    background-color: transparent;
+    box-shadow: 2px 2px 10px 1px gray;
+    border-radius: 20px;
 }
 
-main .products .cards-wrapper .card .icons{
+main .products .cards-wrapper .card img {
+    transition: all 0.3s ease;
+    border-radius: 0 0 10px 10px;
+}
+
+main .products .cards-wrapper .card:hover img {
+    transform: scale(1.03);
+}
+
+main .products .cards-wrapper .card .card-info {
+    padding: 5px 10px;
+}
+
+main .products .cards-wrapper .card {
+    position: relative;
+}
+
+main .products .cards-wrapper .card::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-color: #02b86f;
+    top: 100%;
+    padding: 0;
+    left: 0;
+    border-radius: 15px;
+    transition: all 0.7s ease;
+    z-index: -1;
+}
+
+main .products .cards-wrapper .card:hover:after {
+    top: 0;
+}
+
+main .products .cards-wrapper .card {
+    overflow: hidden;
+}
+
+
+main .products .cards-wrapper .card .icons {
     font-weight: 400;
 }
 
-main .products .cards-wrapper .card .icons i{
+main .products .cards-wrapper .card .icons i {
     display: inline-block;
-    padding: 0 10px ;
+    padding: 0 10px;
 }
 
-main .products .cards-wrapper .card .icons span{
+main .products .cards-wrapper .card .icons span {
     display: inline-block;
-    padding: 0 10px ;
+    padding: 0 10px;
 }
 
-main .products .cards-wrapper .card .buy-btn{
+main .products .cards-wrapper .card .buy-btn {
     text-align: center;
     padding: 15px 0;
+    border-top: rgb(227, 227, 227) solid 1px;
+    cursor: pointer;
 }
 
-main .products .cards-wrapper .card .buy-btn a{
+main .products .cards-wrapper .card .buy-btn a {
     text-decoration: none;
-    color: #00A060;
+    color: #004e2f;
     transition: all .3s ease;
 }
 
-main .products .cards-wrapper .card .buy-btn a:hover{
-    color: #004e2f;
+main .products .cards-wrapper .card .buy-btn:hover a{
+    color: #ffffff;
 }
 
-main .offers .offer-wrapper{
+main .offers .offer-wrapper {
     display: grid;
     gap: 20px;
     grid-template-columns: 3fr 1fr;
 }
 
-main .offers .offer-wrapper .main-img{
+main .offers .offer-wrapper .main-img {
     position: relative;
+    transition: all 0.3s ease;
 }
 
-main .offers .offer-wrapper .main-img .img-1{
+main .offers .offer-wrapper .main-img .img-1 {
     position: absolute;
     top: 80px;
     left: 30%;
 }
 
-main .offers .offer-wrapper .main-img .text{
+main .offers .offer-wrapper .main-img .text {
     position: absolute;
     top: 80px;
     left: 15%;
 }
 
+main .offers .offer-wrapper .main-img:hover {
+    transform: scale(1.01);
+}
+
+main .offers .offer-wrapper .offer-2 {
+    transition: all ease 0.3s;
+}
+
+main .offers .offer-wrapper .offer-2:hover {
+    transform: scale(1.05);
+}
 
 
-main .prime-offer{
+
+main .prime-offer {
     /* position: relative; */
     padding: 80px 0;
 }
 
-main .prime-offer .wrapper{
+main .prime-offer .wrapper {
     position: relative;
 }
 
-main .prime-offer .img-1{
+main .prime-offer .img-1 {
     position: absolute;
     top: -140px;
     left: 5%;
+    transition: all 0.4s ease;
 }
 
-footer{
+main .prime-offer .img-1:hover {
+    transform: scale(1.05);
+}
+
+main .prime-offer .main-img {
+    transition: all 0.6s ease;
+}
+
+main .prime-offer .main-img:hover {
+    transform: scale(1.009);
+}
+
+main .prime-offer button {
+    position: absolute;
+    top: 65%;
+    left: 61%;
+    padding: 20px 30px;
+    background-color: #00A060;
+    border: 1px solid #004e2f;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+main .prime-offer button:hover {
+    background-color: #003520;
+    border: 1px solid transparent;
+    color: #FFF;
+}
+
+main {
+    margin-bottom: 70px;
+}
+
+footer {
     background-color: #00A060;
     color: #fff;
 }
 
-footer .main-footer{
+footer .main-footer {
     padding: 60px 0;
 }
 
-footer .main-footer .wrapper{
+footer .main-footer .wrapper {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    text-align: center;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-footer .main-footer .categories .lists{
+footer .main-footer .categories .lists {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-footer  a {
-        text-decoration: none;
-        color: #fff;
+footer .main-footer .categories .lists ul li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+footer a:hover {
+    color: #003520;
 }
 
 footer .main-footer .container ul {
@@ -242,29 +432,34 @@ footer .main-footer .container ul {
     margin: 0;
 }
 
-footer .main-footer .contact a{
+footer .main-footer .contact a {
     display: inline-block;
 
 }
 
 
 footer .main-footer .contact ul li {
-    padding: 10px;   
+    padding: 10px;
 }
 
-footer .main-footer .joinus i{
+footer .main-footer .joinus i {
     display: inline-block;
     background-color: #fff;
     width: 50px;
     height: 50px;
-    border: solid 1px ;
+    border: solid 1px;
     border-radius: 50%;
     padding: 10px;
     font-size: 25px;
-
+    margin: 0 3px;
+    transition: all ease 0.4s;
 }
 
-footer .copy .container{
+footer .main-footer .joinus i:hover {
+    transform: scale(1.2);
+}
+
+footer .copy .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
