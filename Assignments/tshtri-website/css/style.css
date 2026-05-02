@@ -273,6 +273,15 @@ main .products .cards-wrapper .card {
     overflow: hidden;
 }
 
+main .products .cards-wrapper .card .card-info p{
+    display: inline-block;
+}
+
+main .products .cards-wrapper .card .card-info a{
+    text-decoration: none;
+    color: black;
+}
+
 
 main .products .cards-wrapper .card .icons {
     font-weight: 400;
@@ -292,8 +301,18 @@ main .products .cards-wrapper .card .buy-btn {
     text-align: center;
     padding: 15px 0;
     border-top: rgb(227, 227, 227) solid 1px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
+main .products .cards-wrapper .card  a{
+    text-decoration: none;
+    color: #004e2f;
+    transition: all ease 0.4s;
+}
+
+main .products .cards-wrapper .card a:hover {
+    color: #ffffff;
+}
+
 
 main .products .cards-wrapper .card .buy-btn a {
     text-decoration: none;
