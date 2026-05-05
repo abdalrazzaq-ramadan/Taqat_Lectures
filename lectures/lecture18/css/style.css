@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container div {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(196, 195, 195);
+}
+
+.container .copy-box{
+    position: relative;
+}
+
+.container div i{
+    cursor: pointer;
+}
+
+.container div b{
+    position: absolute;
+    right: 0;
+    top: 25px;
+}
+
+.container div b{
+    visibility: hidden;
+    opacity: 0;
+    transition: ease all 0.3s;
+}
+
+.copy-box .show{
+    visibility: visible;
+    opacity: 1;
+}
