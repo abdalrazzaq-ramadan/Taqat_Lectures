@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    margin: 0;
+    background-color: aquamarine;
+    height: 1000vh;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.top{
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    /* display: none; */
+    transition: all ease .3s;
+}
+
+
+.rotate{
+    transform: rotate(180deg);
+}
+
