@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+body .popup{
+    background-color: rgba(85, 84, 84, 0.668);
+    width: 100%;
+    height: 100vh;
+    padding: 35px;
+    font-size: 35px;
+    visibility: hidden;
+}
+
+
+body .popup button{
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+body .popup .content{
+    justify-self: center;
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+.popup.show{
+    visibility: visible;
+    opacity: 1;
+}

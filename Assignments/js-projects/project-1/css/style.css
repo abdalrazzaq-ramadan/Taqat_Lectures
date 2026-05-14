@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+    background-color: grey;
+    text-align: center;
+    align-items: center;
+    padding: 100px;
+    margin: 0 auto;
+    font-size: 35px;
+}
+
+.wrapper input{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.wrapper button{
+    border-radius: 15px;
+    font-size: 25px;
+}

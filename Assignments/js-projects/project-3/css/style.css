@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.wrapper{
+    padding: 25px;
+    text-align: center;
+    justify-self: center;
+}
+
+.wrapper button{
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    margin: 15px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
