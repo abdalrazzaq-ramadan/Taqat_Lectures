@@ -81,13 +81,13 @@ const hostBtn = document.querySelector(".plans .btns .H")
 
 designBtn.onclick = (e) => {
   e.preventDefault();
-  plansContainer.style.gridTemplateColumns = "repeat(3, 1fr)";
+  plansContainer.classList.add("grid-3");
   renderDesignPlans();
 }
 
 hostBtn.onclick = (e) => {
   e.preventDefault();
-  plansContainer.style.gridTemplateColumns = "repeat(4, 1fr)";
+  plansContainer.classList.add("grid-4");
   renderHostingPlans();
 }
 
@@ -239,4 +239,8 @@ window.onscroll = () => {
   }
 }
 
+
+
+
+/* side menue */
 
