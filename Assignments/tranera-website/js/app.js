@@ -39,17 +39,17 @@ const hostingPlans = [
 
   {
     name: "خطة التغيير ",
-    price: "420"
+    price: "980"
   },
 
   {
     name: "خطة الابتكار ",
-    price: "420"
+    price: "1250"
   },
 
   {
     name: "خطة التحول ",
-    price: "420"
+    price: "2000"
   }
 ]
 
@@ -73,6 +73,7 @@ const designPlans = [
 
 window.onload = () => {
   renderHostingPlans()
+  plansContainer.classList.add("grid-4");
 }
 
 const plansContainer = document.querySelector(".plans-wrapper")
@@ -81,6 +82,7 @@ const hostBtn = document.querySelector(".plans .btns .H")
 
 designBtn.onclick = (e) => {
   e.preventDefault();
+  plansContainer.classList.remove("grid-4")
   plansContainer.classList.add("grid-3");
   renderDesignPlans();
 }
@@ -168,7 +170,7 @@ function renderDesignPlans() {
 
   designPlans.forEach((plan) => {
     plansContainer.innerHTML += `
-      <div class="plan">
+      <div class="plan d-plans">
                             <div class="hover-place">
                                 <h4>${plan.name}</h4>
                                 <b>${plan.price}</b>
